@@ -9,5 +9,5 @@ current_date_h2.innerText = days[d.getDay()]
 setInterval(() => {
     const d = new Date()
 
-    current_time_h2.innerText = `${d.getUTCHours()}:${d.getUTCMinutes()} ${d.getUTCSeconds()} ${d.getUTCMilliseconds()}`
-}, 1)
+    current_time_h2.innerText = `${d.getTime()}`
+}, 1000)
